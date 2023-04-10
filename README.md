@@ -1,54 +1,46 @@
-# Professional README Generator
+# Note taker
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Description
+  ## Description
 
-This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+  Note Taker that can be used to write and save notes.
 
-## Table of Contents
+  ## Table of Contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-## Installation
+  ## Installation
 
-To install the necessary dependencies, run the following command:
+  Git Clone https://github.com/aaronburton36/Challnge-11.git, then install the dependencies by using npm install, last but not least start the server by node server.js.
 
-\`\`\`bash
-npm install
-\`\`\`
+  ## Usage
 
-## Usage
+  this should be used for taking saving notes
 
-To use the application, run the following command:
+  ## License
 
-\`\`\`bash
-node index.js
-\`\`\`
-
-Follow the prompts to enter your project information. Once you have answered all of the questions, a README.md file will be generated in the current directory.
-
+  
 ## License
 
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
+    
 
-## Contributing
+  ## Contributing
 
-Contributions are welcome! Please feel free to open a pull request or submit an issue if you notice a bug or have a feature request.
+  Contributions are welcome! Please feel free to open a pull request or submit an issue if you notice a bug or have a feature request.
 
-## Tests
+  ## Tests
 
-To run tests, run the following command:
+  run the server on your local host and write notes, save notes, delete notes, and edit notes.
 
-\`\`\`bash
-npm test
-\`\`\`
+  ## Questions
 
-## Questions
+  If you have any questions, please feel free to contact me via email at undefined. You can also find more of my work on [GitHub](https://github.com/undefined/).
 
-If you have any questions, please feel free to contact me via email at [aaronburton36@gmail.com](mailto:aaronburton36@gmail.com). You can also find more of my work on [GitHub](https://github.com/aaronburton36/).
+  
