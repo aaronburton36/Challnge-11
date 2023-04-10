@@ -21,7 +21,7 @@
 
   ## Usage
 
-  this should be used for taking saving notes
+  This should be used for taking and saving notes.
   
 ## License
 
@@ -34,7 +34,7 @@ This project is licensed under the [MIT](https://opensource.org/licenses/MIT) li
 
   ## Tests
 
-  run the server on your local host and write notes, save notes, delete notes, and edit notes.
+  Run the server on your local host and write notes, save notes, delete notes, and edit notes.
 
   ## Questions
 
