@@ -22,9 +22,6 @@
   ## Usage
 
   this should be used for taking saving notes
-
-  ## License
-
   
 ## License
 
