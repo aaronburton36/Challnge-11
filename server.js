@@ -36,18 +36,26 @@ app.post('/api/notes', (req, res) => {
   });
 });
 
-app.delete('/api/notes/:id', (req, res) => { // The :id is a URL parameter that can be accessed from req.params object
-  const id = req.params.id; // We extract the id from req.params object
-  
-  const indexToDelete = notes.findIndex(note => note.id === id); // Use findIndex() method to find the index of the note we want to delete by comparing its id with passed-in id
-  
-  if (indexToDelete !== -1) { // If the index is -1, it means the note doesn't exist
-    notes.splice(indexToDelete, 1); // Remove the note from the array using splice() method
-    res.status(204).send(); // Send a success status and an empty response body
-  } else {
-    res.status(404).send(`Note with id ${id} not found`); // Send a 404 error if the note is not found
-  }
+app.delete('/api/notes/:id', (req, res) => {
+  const idToDelete = req.params.id;
+  fs.promises.readFile(path.join(__dirname, 'db/db.json'), 'utf8')
+    .then(data => {
+      let notes = JSON.parse(data);
+      notes = notes.filter(note => note.id !== idToDelete);
+      return fs.promises.writeFile(
+        path.join(__dirname, 'db/db.json'),
+        JSON.stringify(notes)
+      );
+    })
+    .then(() => {
+      res.sendStatus(204); // No content to send back
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).send('Internal Server Error');
+    });
 });
+
 
 
 
